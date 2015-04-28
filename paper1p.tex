@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{onecolpceurws}
+\usepackage[utf8]{inputenc}
+
+\title{Granularity Social Network Analysis: Research in Progress}
+
+\author{
+Miguel Ángel Fernández \\ GSyC/LibreSoft \\
+                Universidad Rey Juan Carlos \\ ma.fernandezsa@alumnos.urjc.es
+\and
+Gregorio Robles \\ GSyC/LibreSoft \\
+                Universidad Rey Juan Carlos \\ grex@gsyc.urjc.es
+\and
+Jesús M. González Barahona \\ Bitergia \\
+                jgb@bitergia.com
+}
+
+\institution{}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Abstract paragraph should be indented $1.25$ inch on both
+the left and right-hand margins. Abstract must be centered, bold, and
+in point size 12. Two line spaces precede the Abstract. The Abstract
+must be limited to one paragraph.
+\end{abstract}
+\vskip 32pt
+
+
+\section{Introduction/Motivation}
+
+Here comes the intro/motivation
+
+\section{Methodology}
+
+Here we will talk about the methodology
+
+\subsection{Second Level Heading}
+
+This is a subsection
+
+\subsubsection{Figures}
+
+Figure \ref{fig1} shows how to include a figure as encapsulated postscript.
+The source of the figure is in file {\tt fig1.eps}.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[height=4cm]{fig1}
+\caption{Sample EPS figure }
+\label{fig1}
+\end{center}
+\end{figure}
+
+Below is another figure using LaTeX commands.
+
+
+\begin{figure}[ht]
+\begin{center}
+\setlength{\unitlength}{1pt}
+\footnotesize
+\begin{picture}(160,80)
+        \put(0,0){\framebox(160,80)[]{}}
+        \put(10,35){\framebox(80,40){}}
+        \put(100,20){\framebox(40,20){}}
+        \put(70,10){\framebox(20,10){}}
+        \put(20,5){\framebox(10,5){}}
+\end{picture}
+\caption{Sample Figure Caption}
+\end{center}
+\end{figure}
+
+\subsubsection{Tables}
+
+All tables must be centered, neat, clean and legible. Do not use pencil
+or hand-drawn tables. Table number and title always appear before the
+table.
+
+One line space before the table title, one line space after the table
+title and one line space after the table. The table title must be
+initial caps and each table numbered consecutively.
+
+\begin{table}[ht]
+\begin{center}
+\caption{Sample Table}
+
+\bigskip
+
+\begin{tabular}{|l|l|r|}
+\hline
+A & B & 1\\ \hline
+C & D & 2\\
+E & F & 3\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\subsubsection{Handling References}
+
+Use a first level heading for the references. References follow the
+acknowledgements.
+
+
+\subsubsection{Acknowledgements}
+
+Use a third level heading for the acknowledgements. All acknowledgements
+go at the end of the paper.
+
+
+\bibliographystyle{alpha} 
+\bibliography{bib}
+%inline the .bbl file directly for mailing to authors.
+
+%\begin{thebibliography}{Com79}
+%
+%\bibitem[Com79]{Comer-btree}
+%D.~Comer.
+%\newblock The ubiquitous b-tree.
+%\newblock {\em Computing Surveys}, 11(2):121--137, June 1979.
+%
+%\bibitem[Knu73]{Knuth-vol3}
+%D.~E. Knuth.
+%\newblock {\em The Art of Computer Programming -- Volume 3 / Sorting and
+%  Searching}.
+%\newblock Addison-Wesley, 1973.
+%
+%\end{thebibliography}
+
+\end{document}
+
+
