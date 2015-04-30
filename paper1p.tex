@@ -33,13 +33,15 @@ must be limited to one paragraph.
 
 \section{Introduction/Motivation}
 
-Here comes the intro/motivation
+Most social network studies for software projects are focused in a file-based data of interactions in that network of developers. If there is a collaboration between two or more developers in same file, how can we be sure when there are thousands lines of code if that people did actually collaborate? \\
+We want to go to a deeper level: in this particular case, a method-base analysis which allows us to know with more accuracy if there is a real relationship between those developers.
 
 \section{Methodology}
 
-Here we will talk about the methodology
+The program studies registered changes made in a given repository tracked by Git. From that repository, it extracts log from a specified date range. Using that data, the program iterates with each commit made, and does a checkout with all of them to take the repository to the state the program was when each commit was made. \\ At each iteration, we use Ctags with each file to get classified all changes made in each of those files. Next, is to find matches between the commit info and Ctags data, so we can tell if a method has been modified.\\
+Once the program finishes all checkout iterations, it takes that data and searches for coincidences when different developers have modified same file and method and outputs that data into a CSV-format file, which can be used in programs like Gephi to watch a graph-type representation of the network.
 
-\subsection{Second Level Heading}
+\subsection{Particular case: GNOME gedit}
 
 This is a subsection
 
