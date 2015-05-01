@@ -1,16 +1,14 @@
 \documentclass[a4paper]{article}
 \usepackage{graphicx}
+\usepackage{url}
 \usepackage{onecolpceurws}
 \usepackage[utf8]{inputenc}
 
 \title{Collaboration Networks in Software Development: Perspectives from Applying different Granularity Levels using Social Network Analysis - Research in Progress}
 
 \author{
-Miguel Ángel Fernández \\ GSyC/LibreSoft \\
-                Universidad Rey Juan Carlos \\ ma.fernandezsa@alumnos.urjc.es
-\and
-Gregorio Robles \\ GSyC/LibreSoft \\
-                Universidad Rey Juan Carlos \\ grex@gsyc.urjc.es
+Miguel Ángel Fernández, Gregorio Robles \\ GSyC/LibreSoft \\
+                Universidad Rey Juan Carlos \\ \{ma.fernandezsa@alumnos., gregorio.robles@\}urjc.es
 \and
 Jesús M. González Barahona \\ Bitergia \\
                 jgb@bitergia.com
@@ -43,17 +41,17 @@ company level.
 The development of large software systems is a collaborative task where
 many developers, sometimes up to thousands of them, are involved. In such 
 scenario, software engineering research has been long looking after
-understanding how these collaborations arise, and how they evolve over time.
+understanding how these collaborations arise, and how they evolve over time~\cite{minto2007recommending,singh2010small,surian2010mining,hossain2009social}.
 
 In order to identify collaboration, many scholars have used techniques such as
 social network analysis, where two developers (nodes) are connected if they
-have collaborated together. In most social network studies the
+have collaborated together~\cite{madey2002open,lopez2004applying}. In most social network studies the
 resulting network is based on file-based or module-based data of interactions;
 if there has been a collaboration between two developers in a file or a module,
-these developers are connected.
+these developers are connected. 
 
 Our research is concerned with the fact that the resulting network graph depends
-heavily on the granularity level that is selected. When there are tens of files
+heavily on the granularity level that is selected~\cite{howison2012validity}. When there are tens of files
 in a module/directory or thousands of lines in a file, did collaboration really
 exist?
 
@@ -67,97 +65,88 @@ picture.
 
 \section{Methodology}
 
-FIXME: intro
+Our methodology studies registered changes made to a given repository tracked by
+a versioning system (in our case \texttt{git}). 
+From that repository, it extracts the log for a specified date range. Using
+that data, the program iterates for each commit, performs a checkout
+and uses \texttt{ctags} with each file to identify function/method information
+in each of those files.
 
-The program studies registered changes made in a given repository tracked by
-Git. From that repository, it extracts log from a specified date range. Using
-that data, the program iterates with each commit made, and does a checkout
-with all of them to take the repository to the state the program was when each
-commit was made. At each iteration, we use Ctags with each file to get
-classified all changes made in each of those files.
+Next, matches between the commits information and \texttt{ctags} data
+(still for each checkout) are searched for, to identify those methods that have
+changed. By now, changes in methods are only tracked if the method has not 
+changed its name. Future versions of our tool will include heuristics to analyze
+as well those functions whose name change.
 
-Next, is to find matches
-between the commits information and Ctags data (still for each checkout), so
-we can tell if a method has been modified.
+While changes to functions/methods are extracted, the developers who have performed
+these chages are attached to the change. As by now, we do not apply developer merging
+algorithms, so that a developer with different aliases will only appear once,
+but we plan to do it in the future. This data is aggregated and offered
+in two CVS-formatted files, one for collaborations occurring in the same file
+and another one with collaborations in the same function/method. This output
+can be used by traditional programs to obtain a social network grach, such as
+Gephi, or to calculate social network measures and properties.
 
-Once the program finishes all checkout iterations, it takes that data and
-searches for coincidences when different developers have modified same file
-and method and outputs that data into two CSV-format files, one for in-file
-collaborations and the other one for in-method collaborations; which can be
-used in programs like Gephi to watch a graph-type representation of the
-network.
+The tools is available on-line as free software in a GitHub repository\footnote{\url{https://github.com/LibreSoftTeam/R-SNA}}.
 
-\section{Case study: GNOME Gedit}
+\section{Case study}
 
-We used the program to study the evolution of GNOME-text editor Gedit (https://github.com/GNOME/gedit).
+We have used the program to study the evolution of the GNOME-text editor \texttt{gedit}\footnote{The repository of \texttt{gedit} used in this analysis is \url{https://github.com/GNOME/gedit}}.
 
 The considered date range for this study goes from the very beginning of
-the project (At least, from the moment when log starts), which is April
+the project (at least, from the moment a first commit has been found in the log), which is April
 15, 1998 until April 15, 2015.
 
-\subsection{Results}
-
-With this wide range of time, we have chosen time-lapses of six months so
+Within this time range, we have chosen time-lapses of six months so
 we can handle and understand better the resulting data and its evolution
-through these years.\\
-First selected date range was from January 1, 2001 to May 31, 2001 
-(First-half of year 2001) and second one was from June 1, 2014 to December
-31, 2014 (Second-half of year 2014).\\
+over time. The chosen time period is consistent with the release period of GNOME 
+(at least from 2005 onwards).
 
-All this data, is represented in two different ways:\\
-First one is a graphic representation of collaboration networks between
+In this paper we show the results for two selected timeframes: from January 1, 2001 to May 31, 2001 and from June 1, 2014 to December 31, 2014. For both ranges we offer a graphic representation of collaboration networks between
 developers. Each node represents a developer, and edges represents
-interactions between them.\\
-We have two different graphs for each date range: an in-file collaboration
-network (Developers who have modified same file) and an in-method
-collaboration network (Developers who have modified same method).\\
-\\
-Second one is a numerical representation, particularly of an statistic
-parameter referred to networks: Betweenness centrality.\\
-The betweenness centrality of a node reflects the amount of control that
-this node exerts over the interactions of other nodes in the network.\\
+interactions between them. We have two different graphs for each date range: an in-file collaboration network (developers who have modified same file) and an in-method
+collaboration network (developers who have modified same method).
 
-\subsubsection{Graphic results}
+Figure~\ref{fig:2001} shows the different graphs (in-file and in-method data) for the
+first half of 2001. As expected the number of collaborations (only those developers
+who collaborate are shown in the graph) is larger in the in-file network than in
+the in-method one.
 
-Figure 1 shows the different graphs (In-file and In-method data) from
-first-half of 2001.
-
-\begin{figure}[ht]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.17]{g2001files.png} 
 \includegraphics[scale=0.17]{g2001methods.png}
 \caption{In-file (left) and In-method (right) collaboration graphs - 2001}
-\label{fig:fixme1}
+\label{fig:2001}
 \end{center}
 \end{figure}
 
-Figure 2 shows the different graphs (In-file and In-method data) from
-second-half of 2014.
+Figure~\ref{fig:2014} shows graphs (in-file and in-method data) for the
+second half of 2014.
 
-\begin{figure}[ht]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.17]{g2014files.png} 
 \includegraphics[scale=0.17]{g2014methods.png}
 \caption{In-file (left) and In-method (right) collaboration graphs - 2014}
-\label{fig:fixme2}
+\label{fig:2014}
 \end{center}
 \end{figure}
 
-\subsubsection{Numeric results}
-
-Using Gephi, we have calculated Betweenness centrality of the resulting
-graphs.
-The following values are normalized [0,1], and it only appears nodes with
-non-zero values.
+We also have computed a numerical representation, the betweenness centrality of a node,
+that reflects the amount of control that
+this node exerts over the interactions of other nodes in the network. 
+The values of betweenness given in Tables~\ref{tab:2001} and Table~\ref{tab:2014} 
+are normalized, and only nodes that have at least one non-zero value are shown.
 
 \begin{table}[ht]
 \begin{center}
-\caption{Betweenness centrality from 2001-first-half data}
+\caption{Betweenness centrality for first half of 2001}
+\label{tab:2001}
 \bigskip
-
 \begin{tabular}{|l|l|r|}
 \hline
-Node & Files & Methods\\ \hline
+Node & Files & Methods/Functions \\ \hline
 Jacob Leach & 0.0015873015873015873 & 0.007368421052631579\\
 Jason Leach & 0.0015873015873015873 & 0.06807017543859648\\
 Gediminas Paulauskas & 0.08304673721340389 & 0\\
@@ -170,12 +159,12 @@ Chema Celorio & 0.190189594356261 & 0.02140350877192982\\ \hline
 
 \begin{table}[ht]
 \begin{center}
-\caption{Betweenness centrality from 2014-second-half data}
+\caption{Betweenness centrality for second half of 2014}
 \bigskip
-
+\label{tab:2014}
 \begin{tabular}{|l|l|r|}
 \hline
-Node & Files & Methods\\ \hline
+Node & Files & Methods/Functions \\ \hline
 Igor Gnatenkov & 2.7210884353741496E-4 & 0\\
 Alexandre Franke & 6.122448979591836E-4 & 0\\
 Matthias Clasen & 0.008321995464852606 & 0.02217741935483871\\
@@ -192,11 +181,21 @@ Sebastien Wilmet & 0.14896080336896667 & 0.00842453917050691\\ \hline
 \end{table}
 
 
+\section{Future work}
 
-\section{Acknowledgements}
+As future work, we plan to:
 
-FIXME\\
-Acknowledgments goes here\\
+\begin{itemize}
+  \item Include in our tool algorithms to track function name changes~\cite{godfrey2005using}.
+  \item Include in our tool algorithms to merge developer aliases~\cite{kouters2012s}.
+  \item Augment the analysis with developer affiliation information~\cite{gonzalez2013understanding}. This 
+  \item Perform several analysis to compare the collaboration graphs provided by 
+  creating collaboration
+\end{itemize}
+
+\section*{Acknowledgements}
+
+This work has been funded in part by the Spanish Gov. under SobreSale (TIN2011-28110) and by the Comunidad de Madrid under ``eMadrid - Investigaci\'on y Desarrollo de tecnolog\'ias para el e-learning en la Comunidad de Madrid'' (S2013/ICE-2715).
 
 \bibliographystyle{alpha} 
 \bibliography{bib}
