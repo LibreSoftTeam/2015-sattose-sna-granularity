@@ -70,10 +70,6 @@ least, from the moment when log starts), which is April 15, 1998 until April
 
 \subsection{Results}
 
-\subsubsection{Numeric results}
-
-Here: numerical data and tables.
-
 \subsubsection{Graphic results}
 
 Figure 1 shows the different graphs (In-file and In-method data) from
@@ -100,37 +96,61 @@ second-half of 2014.
 \end{center}
 \end{figure}
 
+\subsubsection{Numeric results}
 
+Using Gephi, we have calculated Betweenness centrality of the resulting graphs.
+The betweenness centrality of a node reflects the amount of control that this
+node exerts over the interactions of other nodes in the network.
 
-\subsubsection{Tables}
-
-All tables must be centred, neat, clean and legible. Do not use pencil
-or hand-drawn tables. Table number and title always appear before the
-table.
-
-One line space before the table title, one line space after the table
-title and one line space after the table. The table title must be
-initial caps and each table numbered consecutively.
+The following values are normalized [0,1], and it only appears nodes with
+non-zero values.
 
 \begin{table}[ht]
 \begin{center}
-\caption{Sample Table}
-
+\caption{Betweenness centrality from 2001-first-half data}
 \bigskip
 
 \begin{tabular}{|l|l|r|}
 \hline
-A & B & 1\\ \hline
-C & D & 2\\
-E & F & 3\\ \hline
+Node & Files & Methods\\ \hline
+Jacob Leach & 0.0015873015873015873 & 0.007368421052631579\\
+Jason Leach & 0.0015873015873015873 & 0.06807017543859648\\
+Gediminas Paulauskas & 0.08304673721340389 & 0\\
+Pablo Saratxaga & 0.10482804232804235 & 0.23964912280701753\\
+Paolo Maggi & 0.12272927689594355 & 0.02140350877192982\\
+Chema Celorio & 0.190189594356261 & 0.02140350877192982\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[ht]
+\begin{center}
+\caption{Betweenness centrality from 2014-second-half data}
+\bigskip
+
+\begin{tabular}{|l|l|r|}
+\hline
+Node & Files & Methods\\ \hline
+Igor Gnatenkov & 2.7210884353741496E-4 & 0\\
+Alexandre Franke & 6.122448979591836E-4 & 0\\
+Matthias Clasen & 0.008321995464852606 & 0.02217741935483871\\
+Boris Egorov & 0.006448979591836735 & 0\\
+Ignacio Casal Quinteiro & 0.02728312277291869 & 0.0013440860215053762\\
+Piotr Drg & 0.027968901846452864 & 0\\
+Jesse van den Kieboom & 0.029569160997732425 & 0.01989727342549923\\
+Robert Roth & 0.030327502429543254 & 0.0041042626728110595\\
+Paolo Borelli & 0.04774570780693228 & 0.012840821812596005\\
+Sebastien Lafargue & 0.058611920958859746 & 0.03878648233486943\\
+Sebastien Wilmet & 0.14896080336896667 & 0.00842453917050691\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
 
-\subsubsection{Acknowledgements}
 
+\subsubsection{Acknowledgements}
 FIXME
+\\
 
 \bibliographystyle{alpha} 
 \bibliography{bib}
