@@ -22,9 +22,6 @@ Jesús M. González Barahona \\ Bitergia \\
 \begin{document}
 \maketitle
 
-\begin{abstract}
-FIXME
-\end{abstract}
 \vskip 32pt
 
 
@@ -64,11 +61,31 @@ network.
 
 We used the program to study the evolution of GNOME-text editor Gedit (https://github.com/GNOME/gedit).
 
-The considered date range goes from the very beginning of the project (At
-least, from the moment when log starts), which is April 15, 1998 until April
-15, 2015.
+The considered date range for this study goes from the very beginning of
+the project (At least, from the moment when log starts), which is April
+15, 1998 until April 15, 2015.
 
 \subsection{Results}
+
+With this wide range of time, we have chosen time-lapses of six months so
+we can handle and understand better the resulting data and its evolution
+through these years.\\
+First selected date range was from January 1, 2001 to May 31, 2001 
+(First-half of year 2001) and second one was from June 1, 2014 to December
+31, 2014 (Second-half of year 2014).\\
+
+All this data, is represented in two different ways:\\
+First one is a graphic representation of collaboration networks between
+developers. Each node represents a developer, and edges represents
+interactions between them.\\
+We have two different graphs for each date range: an in-file collaboration
+network (Developers who have modified same file) and an in-method
+collaboration network (Developers who have modified same method).\\
+\\
+Second one is a numerical representation, particularly of an statistic
+parameter referred to networks: Betweenness centrality.\\
+The betweenness centrality of a node reflects the amount of control that
+this node exerts over the interactions of other nodes in the network.\\
 
 \subsubsection{Graphic results}
 
@@ -98,10 +115,8 @@ second-half of 2014.
 
 \subsubsection{Numeric results}
 
-Using Gephi, we have calculated Betweenness centrality of the resulting graphs.
-The betweenness centrality of a node reflects the amount of control that this
-node exerts over the interactions of other nodes in the network.
-
+Using Gephi, we have calculated Betweenness centrality of the resulting
+graphs.
 The following values are normalized [0,1], and it only appears nodes with
 non-zero values.
 
@@ -148,9 +163,10 @@ Sebastien Wilmet & 0.14896080336896667 & 0.00842453917050691\\ \hline
 
 
 
-\subsubsection{Acknowledgements}
-FIXME
-\\
+\section{Acknowledgements}
+
+FIXME\\
+Acknowledgments goes here\\
 
 \bibliographystyle{alpha} 
 \bibliography{bib}
