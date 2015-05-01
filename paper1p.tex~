@@ -22,6 +22,7 @@ Jesús M. González Barahona \\ Bitergia \\
 \begin{document}
 \maketitle
 
+<<<<<<< HEAD
 \begin{abstract}
 This paper shows research in progress in the analysis of collaboration networks
 found in software development projects. Traditionally, collaboration networks
@@ -35,6 +36,8 @@ collaboration at the function/method level. In the future we want to include
 deveoper affiliation information to perform a collaboration analysis at the
 company level.
 \end{abstract}
+=======
+>>>>>>> 9c6d3af8d27dc654abb5c45c8afcf553a476c9d3
 \vskip 32pt
 
 
