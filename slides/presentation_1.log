@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.4)  5 JUL 2015 10:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.4)  5 JUL 2015 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,9 +891,9 @@ File: example-graph1.png Graphic file (type png)
 
 <use example-graph1.png>
 Package pdftex.def Info: example-graph1.png used on input line 135.
-(pdftex.def)             Requested size: 224.2757pt x 224.27484pt.
+(pdftex.def)             Requested size: 174.73048pt x 174.73048pt.
 
-Overfull \vbox (29.90427pt too high) detected at line 135
+Overfull \vbox (13.88907pt too high) detected at line 135
  []
 
 
@@ -938,21 +938,45 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 
 [8
 
-]
+] <GDCphase1.png, id=291, 363.3575pt x 433.62pt>
+File: GDCphase1.png Graphic file (type png)
+ <use GDCphase1.png>
+Package pdftex.def Info: GDCphase1.png used on input line 209.
+(pdftex.def)             Requested size: 109.00809pt x 130.087pt.
+
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [9
 
-]
+ <./GDCphase1.png>] <GDCphase2.png, id=320, 669.50125pt x 634.37pt>
+File: GDCphase2.png Graphic file (type png)
+
+<use GDCphase2.png>
+Package pdftex.def Info: GDCphase2.png used on input line 220.
+(pdftex.def)             Requested size: 200.85191pt x 190.31245pt.
+
+Overfull \vbox (2.78632pt too high) detected at line 220
+ []
+
+
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [10
 
-]
+ <./GDCphase2.png>]
+File: GDCphase2.png Graphic file (type png)
+ <use GDCphase2.png>
+Package pdftex.def Info: GDCphase2.png used on input line 231.
+(pdftex.def)             Requested size: 200.85191pt x 190.31245pt.
+
+Overfull \vbox (2.78632pt too high) detected at line 231
+ []
+
+
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -960,15 +984,15 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 [11
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 262.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 262.
+File: GDCphase2.png Graphic file (type png)
+ <use GDCphase2.png>
+Package pdftex.def Info: GDCphase2.png used on input line 242.
+(pdftex.def)             Requested size: 200.85191pt x 190.31245pt.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+Overfull \vbox (2.78632pt too high) detected at line 242
+ []
+
+
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -989,27 +1013,41 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 
 [14
 
-]
-\openout4 = `presentation_1.vrb'.
+] <chart1.png, id=459, 1031.855pt x 561.09625pt>
+File: chart1.png Graphic file (type png)
+ <use chart1.png>
+Package pdftex.def Info: chart1.png used on input line 286.
+(pdftex.def)             Requested size: 330.20035pt x 179.55446pt.
 
- (./presentation_1.vrb)
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [15
 
-]
+ <./chart1.png>] <chart2.png, id=488, 1035.87pt x 542.025pt>
+File: chart2.png Graphic file (type png)
+
+<use chart2.png>
+Package pdftex.def Info: chart2.png used on input line 295.
+(pdftex.def)             Requested size: 331.48517pt x 173.45154pt.
+
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [16
 
-]
-\openout4 = `presentation_1.vrb'.
+ <./chart2.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 314.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 314.
 
- (./presentation_1.vrb)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1023,7 +1061,7 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 
 [18
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+]
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1031,11 +1069,52 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 [19
 
 ]
+\openout4 = `presentation_1.vrb'.
+
+ (./presentation_1.vrb)
 Overfull \hbox (93.66644pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [20
+
+]
+Overfull \hbox (93.66644pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[21
+
+]
+\openout4 = `presentation_1.vrb'.
+
+ (./presentation_1.vrb)
+Overfull \hbox (93.66644pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[22
+
+]
+Overfull \hbox (93.66644pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[23
+
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+Overfull \hbox (93.66644pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[24
+
+]
+Overfull \hbox (93.66644pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[25
 
 ]
 \tf@nav=\write6
@@ -1047,42 +1126,54 @@ Overfull \hbox (93.66644pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
-Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: CF08968275B4B52A685954DF0ADD2D7F;659.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
 
+
+Package rerunfilecheck Warning: File `presentation_1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `presentation_1.out':
+(rerunfilecheck)             Before: 094EA9C51948C6569975660F00B8C09B;659
+(rerunfilecheck)             After:  417B031E5C3D999C8BC6A336FE46F17E;659.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
  ) 
 Here is how much of TeX's memory you used:
- 15956 strings out of 494985
- 297413 string characters out of 6180357
- 370023 words of memory out of 5000000
- 18729 multiletter control sequences out of 15000+600000
+ 16009 strings out of 494985
+ 298065 string characters out of 6180357
+ 370230 words of memory out of 5000000
+ 18760 multiletter control sequences out of 15000+600000
  12301 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,16n,66p,403b,804s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb>
-Output written on presentation_1.pdf (20 pages, 186242 bytes).
+pdfTeX warning (dest): name{Outline0.4.1.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb>
+Output written on presentation_1.pdf (25 pages, 530576 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 53 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 820 PDF objects out of 1000 (max. 8388607)
+ 750 compressed objects within 8 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

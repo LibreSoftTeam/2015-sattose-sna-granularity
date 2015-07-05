@@ -6,7 +6,8 @@
 \beamer@sectionintoc {2}{Methodology}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Building a collaboration graph}{8}{0}{2}
 \beamer@subsectionintoc {2}{2}{Detailed algorithm}{9}{0}{2}
-\beamer@sectionintoc {3}{Case of study}{10}{0}{3}
-\beamer@subsectionintoc {3}{1}{Gedit}{10}{0}{3}
-\beamer@sectionintoc {4}{Second Section}{13}{0}{4}
-\beamer@subsectionintoc {4}{1}{Subseccion}{19}{0}{4}
+\beamer@sectionintoc {3}{Case of study}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Gedit}{13}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{1}{Numeric results}{15}{0}{3}
+\beamer@sectionintoc {4}{Second Section}{18}{0}{4}
+\beamer@subsectionintoc {4}{1}{Subseccion}{24}{0}{4}
