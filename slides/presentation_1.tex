@@ -130,7 +130,8 @@ GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title p
 \item Using Social Network Analysis tecniques we get collaboration networks.
 \begin{figure}
 \includegraphics[width=0.7\linewidth]{example-graph1.png}
-% 	#FIXME Pie de foto?
+\caption{Collaboration network graph from DrScratch project 
+(LibreSoft, Rey Juan Carlos University) - 1st semester, 2015}
 \end{figure}
 \end{itemize}
 \end{frame}
@@ -145,7 +146,7 @@ Two developers (nodes) are connected if they have collaborated together.
 
 \begin{block}{Edges = Collaborations}
 Edges width represents the amount of collaboration
-(The wider the edge, the greater is the number of interactions between those two nodes).
+(The wider the edge is, the greater is the number of interactions between those two nodes).
 \end{block}
 
 \end{frame}
@@ -157,7 +158,7 @@ Edges width represents the amount of collaboration
 \begin{frame}
 \frametitle{Up to now...}
 \begin{itemize}
-\item In most social network studies the resulting network is based on file/module-based data.
+\item In most social network studies the resulting network is based on file/module data.
 \item If there is a collaboration between two developers in the same file/module, these developers are connected.
 \end{itemize}
 \end{frame}
@@ -191,20 +192,26 @@ Edges width represents the amount of collaboration
 \begin{itemize}
 \item In LibreSoft, our department at Rey Juan Carlos University,
 we have developed a python script named GraphDataCreator 
-\item That studies changes in a given 
+\item This script studies changes in a given 
 Git-tracked repository.
 \item Using the commit history of all contributors in a specified period of time.
 \end{itemize}
 \end{frame}
 %------------------------------------------------
 
-\subsection{Detailed algorithm} 
+\subsection{Detailed algorithm}
 
 \begin{frame}
 \frametitle{Detailed algorithm}
 \begin{itemize}
 \item <Several slides including graphic representations>
-
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{GDCphase1.png} 
+\caption{Phase 1 of GraphDataCreator}
+\label{fig:phase1}
+\end{center}
+\end{figure}
 \end{itemize}
 \end{frame}
 
@@ -227,7 +234,7 @@ Git-tracked repository.
 \frametitle{Summing up...}
 \begin{block}{Date range}
 \begin{itemize}
-\item Goes form April 15, 1998 until April 15, 2015.
+\item Goes form April 15, 1998 until April 15, 2015. (17 years!)
 \item Divided into six-month periods
 \end{itemize}
 \end{block}
