@@ -116,6 +116,7 @@ GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title p
 \item Large software projects may involve a lot of developers (Sometimes thousands of them!).
 \item Our interest is to understand better how developers collaborate and how this interaction evolves over time.
 \item We opted to study Free/Libre and Open Source Software (FLOSS) projects due to the easy, public data availability in websites like GitHub.
+% FIXME: OpenStack 
 \end{itemize}
 \end{frame}
 
@@ -169,6 +170,76 @@ Edges width represents the amount of collaboration
 \item When there are tens of files in a module or thousands of lines in a file, did collaboration really exist?
 \item We think the resulting collaboration network graph depends heavily on the granularity level that is considered.
 \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{A different point of view: New-level analysis}
+\begin{itemize}
+\item We've been working to obtain collaboration graphs at function/method level.
+\item In these graphs, two developers collaborate if they have modified the same function in a given time period.
+\item Excluding large fuctions/methods, we think this new point of view can help us to understand better this analysis.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Methodology}
+\subsection{Building a collaboration graph}
+\begin{frame}
+\frametitle{Methodology: Our tool}
+\begin{itemize}
+\item In LibreSoft, our department at Rey Juan Carlos University,
+we have developed a python script named GraphDataCreator 
+\item That studies changes in a given 
+Git-tracked repository.
+\item Using the commit history of all contributors in a specified period of time.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\subsection{Detailed algorithm} 
+
+\begin{frame}
+\frametitle{Detailed algorithm}
+\begin{itemize}
+\item <Several slides including graphic representations>
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Case of study}
+\subsection{Gedit}
+\begin{frame}
+\frametitle{Case of study: Gedit}
+\begin{itemize}
+\item We used the program to study the evolution of GNOME-text editor Gedit *.
+\item The considered date range for this study goes from the very beginning of the project to this year.
+\item To extract data from wide time periods we have developed a super-script that automatically divides large date ranges into smaller periods.
+\text * Data extracted from GitHub repository: https://github.com/GNOME/gedit
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Summing up...}
+\begin{block}{Date range}
+\begin{itemize}
+\item Goes form April 15, 1998 until April 15, 2015.
+\item Divided into six-month periods
+\end{itemize}
+\end{block}
+
+\begin{block}{Resulting data}
+\begin{itemize}
+\item Two different graphs: for each date range, 
+an in-file and an in-method network.
+\item Statistic parameters referred to networks, such as betweeness centrality and clustering coefficent.
+\end{itemize}
+\end{block}
+
 \end{frame}
 
 %------------------------------------------------

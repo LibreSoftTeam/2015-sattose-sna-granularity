@@ -17,28 +17,49 @@
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\slideentry {1}{3}{2}{6/6}{New-level analysis}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\sectionentry {2}{Second Section}{7}{Second Section}{0}}
-\headcommand {\beamer@sectionpages {2}{6}}
-\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\slideentry {2}{0}{3}{7/7}{}{0}}
+\headcommand {\slideentry {1}{3}{3}{7/7}{New-level analysis}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{4}{8/8}{}{0}}
+\headcommand {\sectionentry {2}{Methodology}{8}{Methodology}{0}}
+\headcommand {\beamer@sectionpages {2}{7}}
+\headcommand {\beamer@subsectionpages {5}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Building a collaboration graph}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {2}{1}{1}{8/8}{Building a collaboration graph}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{5}{9/9}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Detailed algorithm}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{Detailed algorithm}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{0}{6}{10/10}{}{0}}
+\headcommand {\sectionentry {3}{Case of study}{10}{Case of study}{0}}
+\headcommand {\beamer@sectionpages {8}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Gedit}}\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{Gedit}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{0}{7}{11/11}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{11/11}{Gedit}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{0}{8}{12/12}{}{0}}
+\headcommand {\slideentry {3}{1}{3}{12/12}{Gedit}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Subseccion}}\headcommand {\beamer@subsectionpages {7}{12}}
-\headcommand {\slideentry {2}{1}{1}{13/13}{Subseccion}{0}}
+\headcommand {\sectionentry {4}{Second Section}{13}{Second Section}{0}}
+\headcommand {\beamer@sectionpages {10}{12}}
+\headcommand {\beamer@subsectionpages {10}{12}}
+\headcommand {\slideentry {4}{0}{4}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{1}{2}{14/14}{Subseccion}{0}}
+\headcommand {\slideentry {4}{0}{5}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@partpages {1}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\beamer@sectionpages {7}{14}}
-\headcommand {\beamer@documentpages {14}}
-\headcommand {\def \inserttotalframenumber {14}}
+\headcommand {\slideentry {4}{0}{6}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {4}{0}{7}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {4}{0}{8}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {4}{0}{9}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{19}{Subseccion}}\headcommand {\beamer@subsectionpages {13}{18}}
+\headcommand {\slideentry {4}{1}{1}{19/19}{Subseccion}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{1}{2}{20/20}{Subseccion}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@partpages {1}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\beamer@sectionpages {13}{20}}
+\headcommand {\beamer@documentpages {20}}
+\headcommand {\def \inserttotalframenumber {20}}
