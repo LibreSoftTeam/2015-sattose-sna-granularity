@@ -92,7 +92,7 @@ GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title p
 \medskip
 \textit{(ma.fernandezsa@alumnos, grex@)urjc.es; jgb@bitergia.com} % Your email address
 }
-\date{\today} % Date, can be changed to a custom date
+\date{July 7, 2015} % Date, can be changed to a custom date
 
 \begin{document}
 
@@ -129,7 +129,7 @@ GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title p
 \frametitle{How do we study collaborations?}
 Using Social Network Analysis tecniques we get collaboration networks.
 \begin{figure}
-\includegraphics[scale=0.17]{example-graph1.png}
+\includegraphics[scale=0.16]{example-graph1.png}
 \caption{Collaboration network graph from DrScratch project 
 (LibreSoft, Rey Juan Carlos University) - 1st semester, 2015}
 \end{figure}
@@ -203,7 +203,7 @@ Git-tracked repository.
 \begin{frame}
 \frametitle{Detailed algorithm I}
 \begin{figure}
-\includegraphics[scale=0.3]{GDCphase1.png} 
+\includegraphics[scale=0.4]{GDCphase1.png} 
 \caption{Phase 1 of GraphDataCreator}
 \label{fig:phase1}
 \end{figure}
@@ -225,7 +225,7 @@ Git-tracked repository.
 \begin{frame}
 \frametitle{Detailed algorithm: findFittingTag}
 \begin{figure}
-\includegraphics[scale=0.3]{GDCphase2.png} 
+\includegraphics[scale=0.3]{GDCfft.png} 
 \caption{Method 'findFittingTag' of GraphDataCreator}
 \label{fig:phasefft}
 \end{figure}
@@ -236,7 +236,7 @@ Git-tracked repository.
 \begin{frame}
 \frametitle{Detailed algorithm III}
 \begin{figure}
-\includegraphics[scale=0.3]{GDCphase2.png} 
+\includegraphics[scale=0.35]{GDCphase3.png} 
 \caption{Phase 3 of GraphDataCreator}
 \label{fig:phase3}
 \end{figure}
@@ -251,7 +251,6 @@ Git-tracked repository.
 \item We used the program to study the evolution of GNOME-text editor Gedit *.
 \item The considered date range for this study goes from the very beginning of the project to this year.
 \item To extract data from wide time periods we have developed a super-script that automatically divides large date ranges into smaller periods.
-\text * Data extracted from GitHub repository: https://github.com/GNOME/gedit
 \end{itemize}
 \end{frame}
 
@@ -277,7 +276,34 @@ an in-file and an in-method network.
 \end{frame}
 
 %------------------------------------------------
-\subsubsection{Numeric results}
+\subsubsection{Results}
+
+\begin{frame}
+\frametitle{Graphic results: 1st semester, 2001}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.12]{g2001files.png} 
+\includegraphics[scale=0.12]{g2001methods.png}
+\caption{In-file (left) and In-method (right) collaboration network graphs}
+\label{fig:2001}
+\end{center}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Graphic results: 1st semester, 2014}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.12]{g2014files.png} 
+\includegraphics[scale=0.12]{g2014methods.png}
+\caption{In-file (left) and In-method (right) collaboration network graphs}
+\label{fig:2014}
+\end{center}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
 \begin{frame}
 \frametitle{Numeric results: Number of developers}
 \begin{figure}
@@ -288,84 +314,24 @@ an in-file and an in-method network.
 
 %------------------------------------------------
 \begin{frame}
-\frametitle{Numeric results: Number of developers}
+\frametitle{Numeric results: Number of collaborations}
 \begin{figure}
 \includegraphics[scale=0.32]{chart2.png}
 \label{fig:chartdev2}
 \end{figure}
 \end{frame}
+
 %------------------------------------------------
+\section{Future work}
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+\frametitle{Future work}
+\begin{itemize}
+% FIXME: Girvan-Newman algorithm?
+\item 1
+\item 2
+\item 3
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
@@ -392,21 +358,14 @@ This statement requires citation \cite{p1}.
 
 %------------------------------------------------
 
-\subsection{Subseccion} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
 \begin{frame}
-\frametitle{Titulo}
-\begin{itemize}
-\item Punto 1
-\item Punto 2
-\item Punto 3
-\end{itemize}
+\Huge{\centerline{Any questions?}}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Thanks for your attention!}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------

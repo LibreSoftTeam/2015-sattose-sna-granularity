@@ -42,18 +42,18 @@
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\slideentry {3}{1}{2}{14/14}{Gedit}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{15}{Numeric results}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{15}{Results}}
 \headcommand {\slideentry {3}{1}{3}{15/15}{Gedit}{0}}
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\slideentry {3}{1}{4}{16/16}{Gedit}{0}}
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {3}{1}{5}{17/17}{Gedit}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\sectionentry {4}{Second Section}{18}{Second Section}{0}}
-\headcommand {\beamer@sectionpages {13}{17}}
-\headcommand {\beamer@subsectionpages {13}{17}}
-\headcommand {\slideentry {4}{0}{6}{18/18}{}{0}}
+\headcommand {\slideentry {3}{1}{6}{18/18}{Gedit}{0}}
 \headcommand {\beamer@framepages {18}{18}}
+\headcommand {\sectionentry {4}{Future work}{19}{Future work}{0}}
+\headcommand {\beamer@sectionpages {13}{18}}
+\headcommand {\beamer@subsectionpages {13}{18}}
 \headcommand {\slideentry {4}{0}{7}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\slideentry {4}{0}{8}{20/20}{}{0}}
@@ -64,13 +64,8 @@
 \headcommand {\beamer@framepages {22}{22}}
 \headcommand {\slideentry {4}{0}{11}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{24}{Subseccion}}\headcommand {\beamer@subsectionpages {18}{23}}
-\headcommand {\slideentry {4}{1}{1}{24/24}{Subseccion}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {4}{1}{2}{25/25}{Subseccion}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@partpages {1}{25}}
-\headcommand {\beamer@subsectionpages {24}{25}}
-\headcommand {\beamer@sectionpages {18}{25}}
-\headcommand {\beamer@documentpages {25}}
-\headcommand {\def \inserttotalframenumber {25}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {19}{23}}
+\headcommand {\beamer@sectionpages {19}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\def \inserttotalframenumber {23}}
