@@ -108,17 +108,39 @@ GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title p
 \section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
+\begin{frame}
+\Huge{\centerline{Introduction}}
+\end{frame}
+%------------------------------------------------
+
 \subsection{Motivation} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
 \frametitle{Motivation}
 \begin{itemize}
 \item Large software projects may involve a lot of developers (Sometimes thousands of them!).
-\item Our interest is to understand better how developers collaborate and how this interaction evolves over time.
+\item Our interest is to understand better how developers collaborate and how this interaction evolves over time and new bussiness phenomenon: \textit{Coopetition}
 \item We opted to study Free/Libre and Open Source Software (FLOSS) projects due to the easy, public data availability in websites like GitHub.
 
 % FIXME: OpenStack 
 \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{What is \textit{coopetition}?}
+\begin{block}{Coopetition}
+% Note: "New hybrid behaviour"
+Two or more companies that compete and cooperate with each other at the same time.
+\end{block}
+\begin{itemize}
+\item \textit{Firms competing for the same revenue model (i.e., where rivalry is
+expected) tend to collaborate more than firms which do not compete for the same
+revenue model}
+\item This is related to sociological concept of homophily, which is the tendency of individuals to associate and bond with similar others
+\end{itemize}
+
 \end{frame}
 
 %------------------------------------------------
@@ -179,12 +201,17 @@ Edges width represents the amount of collaboration
 \begin{itemize}
 \item We've been working to obtain collaboration graphs at function/method level.
 \item In these graphs, two developers collaborate if they have modified the same function in a given time period.
-\item Excluding large fuctions/methods, we think this new point of view can help us to understand better this analysis.
+\item Excluding large functions/methods, we think this new point of view can help us to understand better this analysis.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 \section{Methodology}
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{Methodology}}
+\end{frame}
+%------------------------------------------------
 \subsection{Building a collaboration graph}
 \begin{frame}
 \frametitle{Methodology: Our tool}
@@ -244,9 +271,14 @@ Git-tracked repository.
 
 %------------------------------------------------
 \section{Case of study}
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{Case of Study: Gedit}}
+\end{frame}
+%------------------------------------------------
 \subsection{Gedit}
 \begin{frame}
-\frametitle{Case of study: Gedit}
+\frametitle{Study parameters}
 \begin{itemize}
 \item We used the program to study the evolution of GNOME-text editor Gedit.
 \item The considered date range for this study goes from the very beginning of the project to this year.
@@ -323,6 +355,13 @@ an in-file and an in-method network.
 
 %------------------------------------------------
 \section{Future work}
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{Future work}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Future work}
