@@ -4,76 +4,41 @@
 \headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\slideentry {1}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Motivation}}\headcommand {\beamer@subsectionpages {2}{1}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{Motivation}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Motivation}}\headcommand {\beamer@subsectionpages {2}{2}}
-\headcommand {\slideentry {1}{1}{1}{3/3}{Motivation}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{3}{How do we study collaborations?}}\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\slideentry {1}{2}{1}{3/3}{How do we study collaborations?}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{2}{4/4}{Motivation}{0}}
+\headcommand {\slideentry {1}{2}{2}{4/4}{How do we study collaborations?}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{How do we study collaborations?}}\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\slideentry {1}{2}{1}{5/5}{How do we study collaborations?}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{New-level analysis}}\headcommand {\beamer@subsectionpages {3}{4}}
+\headcommand {\slideentry {1}{3}{1}{5/5}{New-level analysis}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{2}{2}{6/6}{How do we study collaborations?}{0}}
+\headcommand {\sectionentry {2}{Case of study}{6}{Case of study}{0}}
+\headcommand {\beamer@sectionpages {2}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Gedit}}\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\slideentry {2}{1}{1}{6/6}{Gedit}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{7}{New-level analysis}}\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\slideentry {1}{3}{1}{7/7}{New-level analysis}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{1}{1}{7}{Results}}
+\headcommand {\slideentry {2}{1}{2}{7/7}{Gedit}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{3}{2}{8/8}{New-level analysis}{0}}
+\headcommand {\slideentry {2}{1}{3}{8/8}{Gedit}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {1}{3}{3}{9/9}{New-level analysis}{0}}
+\headcommand {\slideentry {2}{1}{4}{9/9}{Gedit}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {2}{Methodology}{10}{Methodology}{0}}
-\headcommand {\beamer@sectionpages {2}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\slideentry {2}{0}{4}{10/10}{}{0}}
+\headcommand {\slideentry {2}{1}{5}{10/10}{Gedit}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Building a collaboration graph}}\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {2}{1}{1}{11/11}{Building a collaboration graph}{0}}
+\headcommand {\sectionentry {3}{Future work}{11}{Future work}{0}}
+\headcommand {\beamer@sectionpages {6}{10}}
+\headcommand {\beamer@subsectionpages {6}{10}}
+\headcommand {\slideentry {3}{0}{6}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{12}{Detailed algorithm}}\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {2}{2}{1}{12/12}{Detailed algorithm}{0}}
+\headcommand {\slideentry {3}{0}{7}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{2}{2}{13/13}{Detailed algorithm}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{2}{3}{14/14}{Detailed algorithm}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{2}{4}{15/15}{Detailed algorithm}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\sectionentry {3}{Case of study}{16}{Case of study}{0}}
-\headcommand {\beamer@sectionpages {10}{15}}
-\headcommand {\beamer@subsectionpages {12}{15}}
-\headcommand {\slideentry {3}{0}{5}{16/16}{}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{17}{Gedit}}\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {3}{1}{1}{17/17}{Gedit}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{1}{2}{18/18}{Gedit}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{19}{Results}}
-\headcommand {\slideentry {3}{1}{3}{19/19}{Gedit}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{1}{4}{20/20}{Gedit}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{1}{5}{21/21}{Gedit}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {3}{1}{6}{22/22}{Gedit}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\sectionentry {4}{Future work}{23}{Future work}{0}}
-\headcommand {\beamer@sectionpages {16}{22}}
-\headcommand {\beamer@subsectionpages {17}{22}}
-\headcommand {\slideentry {4}{0}{7}{23/23}{}{0}}
-\headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {4}{0}{8}{24/24}{}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {4}{0}{9}{25/25}{}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {4}{0}{10}{26/26}{}{0}}
-\headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {4}{0}{11}{27/27}{}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\beamer@partpages {1}{27}}
-\headcommand {\beamer@subsectionpages {23}{27}}
-\headcommand {\beamer@sectionpages {23}{27}}
-\headcommand {\beamer@documentpages {27}}
-\headcommand {\def \inserttotalframenumber {27}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\beamer@sectionpages {11}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\def \inserttotalframenumber {12}}
