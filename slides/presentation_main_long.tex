@@ -1,0 +1,312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[SATToSE 2015]{Collaboration Networks in Software Development: Perspectives from Applying different Granularity Levels using Social Network Analysis - Research in progress} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{\textbf{Miguel Angel Fernandez}, Gregorio Robles and Jesus Gonzalez Barahona} % Your name
+\institute[LibreSoft, URJC] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+GSyC/LibreSoft, Rey Juan Carlos University \\ % Your institution for the title page
+\medskip
+\textit{(ma.fernandezsa@alumnos, grex@)urjc.es; jgb@bitergia.com} % Your email address
+}
+\date{July 7, 2015} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\subsection{Motivation} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Motivation}
+\begin{itemize}
+\item Large software projects may involve a lot of developers (Sometimes thousands of them!).
+\item Understand better how developers collaborate + evolution over time
+\item New business phenomenon: \textit{Coopetition}
+\begin{itemize}
+\item Sociological concept of \textit{homophily}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+
+\subsection{How do we study collaborations?}
+
+\begin{frame}
+\frametitle{Collaboration network graphs}
+\begin{block}{How do we build them?}
+Mining repositories + SNA = Collaboration networks.
+\end{block}
+\begin{block}{Nodes = Developers}
+Two developers (nodes) are connected if they have collaborated together.
+\end{block}
+
+\begin{block}{Edges = Collaborations}
+Edges width represents the amount of collaboration.
+\end{block}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Network graph example}
+\begin{figure}
+\includegraphics[scale=0.18]{example-graph1.png}
+\caption{Collaboration network graph from DrScratch project 
+(LibreSoft, Rey Juan Carlos University) - 1st semester, 2015}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\subsection{New-level analysis} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+%------------------------------------------------
+\begin{frame}
+\frametitle{A different point of view}
+\begin{block}{Up to now...}
+\begin{itemize}
+\item In most SN studies, the resulting network is based on file/module data.
+\item When there are thousands of lines in a file, did collaboration really exist?
+\end{itemize}
+\end{block}
+\begin{block}{New-level analysis}
+\begin{itemize}
+\item Resulting collaboration network depends heavily on the granularity level that is considered.
+\item We've been working to obtain collaboration graphs at function/method level.
+\item Better analysis that file-based one (Excluding large functions/methods).
+\end{itemize}
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section{Case of study}
+%------------------------------------------------
+\subsection{Gedit}
+\begin{frame}
+\frametitle{Case of study}
+\begin{block}{Studied project}
+\textbf{Gedit}, GNOME Text-editor
+\end{block}
+\begin{block}{Date range}
+\begin{itemize}
+\item Goes form April 15, 1998 until April 15, 2015. (17 years!)
+\item Divided into six-month periods
+\end{itemize}
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\subsubsection{Results}
+
+\begin{frame}
+\frametitle{Graphic results: 1st semester, 2001}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.12]{g2001files.png} 
+\includegraphics[scale=0.12]{g2001methods.png}
+\caption{In-file (left) and In-method (right) collaboration network graphs}
+\label{fig:2001}
+\end{center}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Graphic results: 1st semester, 2014}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.12]{g2014files.png} 
+\includegraphics[scale=0.12]{g2014methods.png}
+\caption{In-file (left) and In-method (right) collaboration network graphs}
+\label{fig:2014}
+\end{center}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Numeric results: Number of developers}
+\begin{figure}
+\includegraphics[scale=0.32]{chart1.png}
+\label{fig:chartdev1}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Numeric results: Number of collaborations}
+\begin{figure}
+\includegraphics[scale=0.32]{chart2.png}
+\label{fig:chartdev2}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\section{Methodology}
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{Methodology}}
+\end{frame}
+%------------------------------------------------
+
+\subsection{Detailed algorithm}
+
+\begin{frame}
+\frametitle{Detailed algorithm I}
+\begin{figure}
+\includegraphics[scale=0.4]{GDCphase1.png} 
+\caption{Phase 1 of GraphDataCreator}
+\label{fig:phase1}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Detailed algorithm II}
+\begin{figure}
+\includegraphics[scale=0.3]{GDCphase2.png} 
+\caption{Phase 2 of GraphDataCreator}
+\label{fig:phase2}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Detailed algorithm: findFittingTag}
+\begin{figure}
+\includegraphics[scale=0.3]{GDCfft.png} 
+\caption{Method 'findFittingTag' of GraphDataCreator}
+\label{fig:phasefft}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Detailed algorithm III}
+\begin{figure}
+\includegraphics[scale=0.35]{GDCphase3.png} 
+\caption{Phase 3 of GraphDataCreator}
+\label{fig:phase3}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+\section{Future work}
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Future work}
+\begin{itemize}
+\item Reproduce some of the studies done in the past now at method/function level
+\item Track function name changes and merge developer aliases
+\item Add developer affiliation information
+\item Improve graph visualization
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{Thank you for your attention!}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
